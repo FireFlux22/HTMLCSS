@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Min första HTML-sida</title>
+    </head>
+    <body>
+        <h1>Hej!</h1>
+        <p>
+            Bla bla
+        </p>
+        <p>Något mer...</p>
+        <hr>
+        <p>HTML är ett <em>jättebra</em> språk för att skapa <strong>dokument.</strong></p>
+
+        <!-- <img src="C:\Workspace\ECUtbildning\HTML+CSS.Bild.jpg"> --><br>
+
+        <img src="file:///C:/Workspace/ECUtbildning/HTML+CSS/Bild.jpg"
+            alt="Streckgubbe"
+            width=500> <br>
+            <!--Width kan skrivas både före och efter src, med ett utan ""-->
+            <!-- title="blabla" för att ge ett tooltip när man hovrar över bilden-->
+
+        <a href="http://google.com"><img src="file:///C:/Workspace/ECUtbildning/HTML+CSS/Bild.jpg"
+            alt="Streckgubbe" width=500></a><br>
+
+        <a href="https://google.com"> Google</a> <br>
+
+            <a href="file:///C:/Workspace/ECUtbildning/HTML+CSS/index.html"> Länk</a><br>
+            <!--Måste finnas en text bakom, annars finns ingen länk att faktiskt klicka på-->
+            <a href="index.html"> Länk test</a>
+            <!--Funkar eftersom filen finns i samma mapp-->
+
+            <!--href="#id" för att hoppa till en plats på samma sida-->
+
+            <!-- target="_blank" rel="noopener" == öppna i ny tab -->
+
+            <hr>
+
+            <h3>Musik</h3>
+            <ul>
+                <li>Rock</li>
+                <ol>
+                    <li>Tool</li>
+                    <li>Alien Weaponry</li>
+                </ol>
+                <li>Instrumentalt</li>
+                <ol>
+                    <li>Anulah</li>
+                    <li>Russian Circle</li>
+                </ol>
+            </ul>
+            <hr>
+
+            <table width="1000" border="1">
+                <thead>
+                    <tr>
+                        <th>Namn</th>
+                        <th>Antal ben</th>
+                        <th>Har svans</th>
+                        <th>Färg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Panter</td>
+                        <td>4</td>
+                        <td>Ja</td>
+                        <td>Svart</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hund</td>
+                        <td>4</td>
+                        <td>Ja</td>
+                        <td>Mångfärgad</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gorilla</td>
+                        <td>2</td>
+                        <td>Nej</td>
+                        <td>Svart</td>
+                    </tr>
+
+                    <tr>
+                        <td>Zebra</td>
+                        <td>4</td>
+                        <td>Ja</td>
+                        <td>Svart och vit</td>
+                    </tr>
+
+                    <tr>
+                        <td>Orm</td>
+                        <td>0</td>
+                        <td>Nej</td>
+                        <td>Mångfärgad</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+<br>
+<form>
+  <input type="email"><br>
+  <input type="password"><br>
+  <input type="submit" value="Logga in">
+</form>
+<br> <br>
+
+<form>
+  <label><p>Namn      <input type="text" required> </p></label>
+  <label><p>Email     <input type="email"></p></label>
+  <label><p>Lösenord  <input type="password"></p></label>
+  <label><p>Ålder     <input type="number"></p></label>
+  <label><p>Upprepat lösenord <input type="email"></p></label>
+  <p>Kön </p>
+    <p>Man <input type="radio" name="gender"> Kvinna <input type="radio" name="gender"></p>
+  <label> <p>Land</p> <select>
+    <option value="sweden">Sverige</option>
+    <option value="denmark">Danmark</option>
+    <option value="finland">Finland</option>
+    <option value="norway">Norge</option>
+
+      </select></label>
+      <p><input type="submit"></p>
+
+</form>
+    </body>
+</html>

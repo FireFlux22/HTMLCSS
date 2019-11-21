@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello</title>
+    </head>
+    <style>
+
+        body {
+            background-color: pink;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .highlight {
+            background-color: blue;
+        }
+
+        #highlight-borders > .highlight {
+            border: solid;
+        }
+
+        #highlight2 .highlight {
+            border: solid;
+        }
+    </style>
+
+    <body>
+
+        <p>Hello, world!</p>
+        <p> Här skriver vi en paragraf  </p>
+
+        <div id="highlight-borders">  
+            <span class="highlight">  Här är ett span</span>
+            <span class="highlight"> Ytterligare span</span>
+            <span> Span utan class</span> 
+        </div>
+
+        <p>Mer text!</p>    
+
+        <span class="highlight">Ett span till! </span>
+
+        <p>Test <span class ="highlight">test</span> test test test</p>
+
+        <div id="highlight2"> 
+            <p>Test 
+                <span class="highlight">test</span> 
+            test test test</p>
+        </div>
+
+
+    </body>
+</html>

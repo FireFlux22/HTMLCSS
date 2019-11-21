@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Descendant selectors</title>
+    </head>
+
+    <style> 
+        body {
+            font-size: large;
+        }
+
+        li {
+            color: blue;
+        }
+
+        li li {
+            color: green;
+        }
+
+        li li li {
+            color: red;
+        }
+
+        .colors li:first-child{
+            color: red;
+         }
+
+        .colors li:last-child {
+            color: red;
+        }
+
+        .colors li:first-child ~ li {
+            font-size: 40px;
+        }
+
+    </style>
+
+        <!-- .colors li:first-child ~ li {
+            font-size: 40px;
+        }
+        Alla som kommer efter den första. first-child, alla som kommer efter den första-->
+
+    <body>
+        <ul>
+            <li>A                
+                 <ul>    
+                    <li>A</li>
+                    <li>B
+                        <ul>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                 </ul>
+            </li>
+            <li>B                
+                 <ul>
+                    <li>A</li>
+                    <li>B</li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <ul class="colors">
+            <li>A</li>            
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+
+        </ul>
+    </body>
+</html>
