@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transition</title>
+
+    <style>
+      body {
+        margin: 50px;
+      }
+
+      .s-flagga {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: #006AA7;
+        border: 1px solid darkgrey;
+        transition: background-color 1s ease;
+          }
+
+      .s-flagga::after {
+        content: "";
+        display: block;
+        top: 42%;
+        width: 300px;
+        height: 30px;
+        position: absolute;
+        background-color: yellow;
+        transition: background-color 1s ease;
+      }
+
+      .s-flagga::before {
+        content: "";
+        display: block;
+        left: 30%;
+        width: 30px;
+        height: 200px;
+        position: absolute;
+        background-color: yellow;
+        transition: background-color 1s ease;
+      }
+        
+       .s-flagga:hover {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: red;
+        border: 1px solid rgb(0, 0, 0);
+      }
+
+      .s-flagga:hover::after {
+        content: "";
+        display: block;
+        top: 42%;
+        width: 300px;
+        height: 30px;
+        position: absolute;
+        background-color: white;
+      }
+
+      .s-flagga:hover::before {
+        content: "";
+        display: block;
+        left: 30%;
+        width: 30px;
+        height: 200px;
+        position: absolute;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="s-flagga"></div>
+  </body>
+</html>

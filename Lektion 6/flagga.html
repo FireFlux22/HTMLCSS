@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS flags</title>
+    <style>
+      body {
+        margin: 50px;
+      }
+      .j-flagga {
+        display: flex;
+        width: 300px;
+        height: 200px;
+        background-color: whitesmoke;
+        border: 1px solid darkgrey;
+        align-items: center;
+        justify-content: center;
+      }
+      .j-flagga::after {
+        content: "";
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        background-color: red;
+      }
+      .s-flagga {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: #006AA7;
+        border: 1px solid darkgrey;
+      }
+      .s-flagga::after {
+        content: "";
+        display: block;
+        top: 42%;
+        width: 300px;
+        height: 30px;
+        position: absolute;
+        background-color: yellow;
+      }
+      .s-flagga::before {
+        content: "";
+        display: block;
+        left: 30%;
+        width: 30px;
+        height: 200px;
+        position: absolute;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS flags</h1>
+    <p>Japan</p>
+    <div class="j-flagga"></div>
+    <p>Sverige</p>
+    <div class="s-flagga"></div>
+  </body>
+</html>
