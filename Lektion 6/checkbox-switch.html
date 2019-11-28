@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkbox</title>
+</head>
+
+<style>
+    body {
+        padding: 50px;
+    }
+
+    .checkbox {
+        position: relative;
+    }
+
+    .checkbox>.slide {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background-color: rgb(189, 187, 187);
+        border-radius: 15px;
+    }
+
+    .checkbox>input[type="checkbox"]:checked~.slide {
+        background-color: rgb(197, 161, 243);
+    }
+
+    .checkbox>input[type="checkbox"] {
+        border: 0;
+        clip: rect(0 0 0 0);
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .checkbox>.fake {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+        background-color: rgb(204, 200, 200);
+        transition: 0.3s linear;
+        position: absolute;
+        top: -25px;
+    }
+
+    .checkbox>input[type="checkbox"]:checked+.fake {
+        background-color: rgb(105, 23, 212);
+        transition: 0.3s linear;
+        transform: translate(50px, 0);
+    }
+</style>
+
+<body>
+
+    <label class="checkbox">
+        <input type="checkbox">
+        <span class="fake"></span>
+        <span class="slide"></span>
+    </label>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkbox</title>
+</head>
+
+<style>
+    .checkbox>input[type="checkbox"] {
+        border: 0;
+        clip: rect(0 0 0 0);
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .checkbox>.fake {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+
+    }
+
+    .checkbox>input[type="checkbox"]:checked+.fake {
+       background-color: blue;
+       transition: 2s linear;
+    }
+
+
+</style>
+
+<body>
+    <label class="checkbox">
+        <input type="checkbox">
+        <span
+        class="fake"></span>
+    </label>
+               
+</body>
+
+</html>
