@@ -52,3 +52,68 @@
     justify-content: flex-end;
     font-weight: bold;
 }
+
+/*Övning 11*/
+
+.flex-bottom {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*Övning 12*/
+
+.flex-left {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+/*Övning 13*/
+
+.flex-right {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*Övning 14
+    Box och färger bestäms i Övning 6*/
+
+
+.flex-reverse {
+    border: solid;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Övning 15*/
+
+.flex-column-right {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*Övning 16*/
+
+.flex-space-between {
+    width: 400px;
+    border: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
