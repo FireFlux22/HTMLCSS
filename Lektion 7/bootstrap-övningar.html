@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Bootstrap Övningar</title>
+
+    <style>
+        [class^="col"] {
+            border: 1px solid black;
+        }
+
+        .container {
+            margin: 20px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Övning 1</h3>
+    <p>A)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">A</div>
+            <div class="col-sm">B</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">C</div>
+            <div class="col-sm">D</div>
+            <div class="col-sm">E</div>
+        </div>
+    </div>
+
+    <p>B)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">A</div>
+            <div class="col-sm">B</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">C</div>
+            <div class="col-sm">D</div>
+            <div class="col-sm-6">E</div>
+        </div>
+    </div>
+
+    <p>C)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">A</div>
+            <div class="col-sm-8">B</div>
+            <div class="col-sm">C</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">D</div>
+            <div class="col-sm">E</div>
+            <div class="col-sm">F</div>
+            <div class="col-sm">G</div>
+            <div class="col-sm">H</div>
+            <div class="col-sm">I</div>
+
+        </div>
+    </div>
+
+    <p>D)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">A</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10">B</div>
+            <div class="col-sm">C</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">C</div>
+            <div class="col-sm">D</div>
+        </div>
+    </div>
+
+    <p>E)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">A</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">B</div>
+            <div class="col-sm">C</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">D</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">E</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">F</div>
+        </div>
+    </div>
+
+    <h3>Övning 3</h3>
+
+    <p>A)</p>
+    <p>En rad med två kolumner där kolumnerna endast visas på samma rad om bredden är större än 540 pixlar.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md">A</div>
+            <div class="col-md">B</div>
+        </div>
+    </div>
+
+    <p>B)</p>
+
+    <p>En rad med två kolumner där kolumnerna endast visas på samma rad om bredden är större än 1140 pixlar.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl">A</div>
+            <div class="col-xl">B</div>
+        </div>
+    </div>
+
+    <p>C)</p>
+
+    <p>En rad med fyra lika stora kolumner där alla kolumnerna visas på egna rader på små skärmar om bredden är mindre
+        än 540 pixlar.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md">A</div>
+            <div class="col-md">B</div>
+            <div class="col-md">C</div>
+            <div class="col-md">D</div>
+        </div>
+    </div>
+
+    <p>D)</p>
+
+    <p>En rad med fyra lika stora kolumner där de två sista kolumnerna visas på egna rader om bredden är mindre än 540
+        pixlar.
+    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">A</div>
+            <div class="col-sm">B</div>
+            <div class="col-md">C</div>
+            <div class="col-md">D</div>
+        </div>
+    </div>
+
+    <p>E)</p>
+
+    <p>En rad med tre lika stora kolumner där den sista kolumnen ska fylla ut en ny egen rad om bredden är mindre än 540
+        pixlar.
+    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">A</div>
+            <div class="col-sm">B</div>
+            <div class="col-md">C</div>
+        </div>
+    </div>
+
+    <p>F)</p>
+
+    <p>En rad med tre kolumner där den mittersta kolumnen ändrar sig beroende på längden på innehållet. </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">A</div>
+            <div class="col-md-auto">BBBBBBBBBBBBBBBBBBBBB</div>
+            <div class="col-sm">C</div>
+        </div>
+    </div>
+
+    <h3>Övning 4</h3>
+
+    <p>A)</p>
+
+    <p>Implementera en layout med 4 kolumner inom samma .row-element där de två sista kolumnerna visas på en egen rad.
+    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="col-12">C</div>
+            <div class="col-12">D</div>
+        </div>
+    </div>
+
+    <p>B)</p>
+
+    <p>Implementera samma som i uppgiften ovan med hjälp av .w-100 </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="w-100 border border-dark">C</div>
+            <div class="w-100 border border-dark">D</div>
+        </div>
+    </div>
+
+    <h3>Övning 5</h3>
+    <p>Använd dig av breakpoints för att implementera en layout som följer följande mönster beroende på containerns
+        storlek: </p>
+    <p>Stor:</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl">A</div>
+            <div class="col-xl">B</div>
+            <div class="col-xl">C</div>
+            <div class="col-xl">D</div>
+        </div>
+    </div>
+
+    <p>Mellan:</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md">A</div>
+            <div class="col-md">B</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">C</div>
+            <div class="col-md">D</div>
+        </div>
+    </div>
+
+    <p>Liten:</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">A</div>
+            <div class="col-sm-12">B</div>
+            <div class="col-sm">C</div>
+            <div class="col-sm">D</div>
+        </div>
+    </div>
+
+    <p>Responsiv:</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg col-md-6 col-sm-12">A</div>
+            <div class="col-lg col-md-6 col-sm-12">B</div>
+            <div class="col-lg col-md-8 col-sm-6">C</div>
+            <div class="col-lg col-md-4 col-sm-6">D</div>
+        </div>
+    </div>
+
+    <h3>Övning 6</h3>
+
+    <p>A)</p>
+    <div class="container">
+        <div class="row">
+            <div class="col border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/blomma.png?raw=true"
+                    class="img-fluid" alt="Blomma">
+            </div>
+            <div class="col border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/uggla.png?raw=true"
+                    class="img-fluid" alt="Uggla">
+            </div>
+        </div>
+    </div>
+
+
+    <p>B)</p>
+
+    <div class="container">
+        <div class="row"> <!--Är redan Display: flex; så kan lägga align-self direkt på col.
+        Kan även lägga direkt align-item direkt på row för att ändra båda-->
+            <div class="col border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/blomma.png?raw=true"
+                    class="img-fluid" alt="Blomma">
+            </div>
+            <div class="col border-0 align-self-end">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/uggla.png?raw=true"
+                    class="img-fluid " alt="Uggla">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
