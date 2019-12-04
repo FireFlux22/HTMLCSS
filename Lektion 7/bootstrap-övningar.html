@@ -28,6 +28,9 @@
     <h3>Övning 1</h3>
     <p>A)</p>
 
+    <!--Det finns 12 platser på en row-->
+    <!--margin och padding mr/mr p/py går bara upp till 4. Baserad på rem -->
+
     <div class="container">
         <div class="row">
             <div class="col-sm">A</div>
@@ -271,6 +274,7 @@
     <div class="container">
         <div class="row">
             <div class="col border-0">
+                <!-- Lägg alltid bilder i en div! Lättare att hantera och ange storlek -->
                 <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/blomma.png?raw=true"
                     class="img-fluid" alt="Blomma">
             </div>
@@ -281,12 +285,12 @@
         </div>
     </div>
 
-
     <p>B)</p>
 
     <div class="container">
-        <div class="row"> <!--Är redan Display: flex; så kan lägga align-self direkt på col.
-        Kan även lägga direkt align-item direkt på row för att ändra båda-->
+        <div class="row">
+            <!--Är redan Display: flex; så kan lägga align-self direkt på col.
+                            Kan även lägga direkt align-item direkt på row för att ändra båda-->
             <div class="col border-0">
                 <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/blomma.png?raw=true"
                     class="img-fluid" alt="Blomma">
@@ -298,6 +302,112 @@
         </div>
     </div>
 
+    <p>C)</p>
+
+    <p>Implementera a) så att uggla.png hamnar på en egen rad om fönstret är litet. </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/blomma.png?raw=true"
+                    class="img-fluid" alt="Blomma">
+            </div>
+            <div class="col-sm border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/uggla.png?raw=true"
+                    class="img-fluid" alt="Uggla">
+            </div>
+        </div>
+    </div>
+
+    <p>D)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/blomma.png?raw=true"
+                    class="img-fluid" alt="Blomma">
+            </div>
+            <div class="col border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/uggla.png?raw=true"
+                    class="img-fluid" alt="Uggla">
+            </div>
+            <div class="col border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/blomma.png?raw=true"
+                    class="img-fluid" alt="Blomma">
+            </div>
+            <div class="row">
+                <div class="col-4 border-0 mx-auto">
+                    <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/uggla.png?raw=true"
+                        class="img-fluid" alt="Uggla">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Övning 7</h3>
+
+    <p>A)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col offset-4">B</div>
+        </div>
+    </div>
+
+    <p>B)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col offset-2">B</div>
+            <div class="col offset-2">C</div>
+        </div>
+    </div>
+
+    <p>C)</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="col  offset-5">C</div>
+        </div>
+    </div>
+
+    <h3>Övning 8</h3>
+
+    <div class="container w-100">
+        <nav class="navbar navbar-dark bg-primary">
+            <span class="navbar-brand mb-0 h1 mx-auto">Aqua</span>
+        </nav>
+
+        <div class="row p-4">
+            <div class="col-md col-sm-12 border-0">
+                <img src="https://github.com/LinkNorth/HTML5CSS3/blob/master/exercises/bootstrap/resources/aqua.jpg?raw=true"
+                    class="img-fluid" alt="Aqua - Barbie Girl">
+            </div>
+            <div class="col-md col-sm-12 border-0">
+                <p class="p-2"> Aqua is a Danish-Norwegian Europop music group, best known for their 1997
+                    multi-platinum crossover single "Barbie Girl". The group formed in 1989 and
+                    achieved crossover success around the globe in the late 1990s and early 2000s.
+                </p>
+            </div>
+        </div>
+
+        <div class="row px-4">
+            <div class="col border-0">
+                <h3>Members</h3>
+            </div>
+        </div>
+
+        <div class="row px-4">
+            <div class="col-md col-sm-12 border-0 h6"> Lene</div>
+            <div class="col-md col-sm-12 border-0 h6"> Rene</div>
+            <div class="col-md col-sm-12 border-0 h6"> Claus</div>
+            <div class="col-md col-sm-12 border-0 h6"> Soren</div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
