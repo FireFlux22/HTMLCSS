@@ -26,6 +26,21 @@
     bottom: 0;
 }
 
+#problem12 .problem-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#problem12 .problem-area .box {
+    flex-grow: 1;
+}
+
+@media (max-width: 540px) {
+    #problem12 .problem-area .box {
+        width: 100%;
+    }
+}
+
 #problem13 > .problem-area {
     display: flex;
     flex-flow: wrap-reverse column-reverse;
