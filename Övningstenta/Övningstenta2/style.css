@@ -1,0 +1,30 @@
+
+#problem1 .problem-area {
+    color: blue;
+    font-size: 22px
+}
+
+#problem2 .problem-area {
+    display: flex;
+    flex-direction: row;
+}
+
+#problem8 .problem-area p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    #problem10 .problem-area .box {
+        background-color: red;
+    }
+}
+
+#problem11 .problem-area {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+    justify-content: center;
+}
+
